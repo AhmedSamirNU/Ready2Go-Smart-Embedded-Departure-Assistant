@@ -6,12 +6,12 @@
 
 <p align="center">
   <b>Smart Embedded Departure Assistant</b><br>
-  <i>Helping you leave home with confidence — never forget your essentials again.</i>
+  <i>An ESP32-powered embedded assistant that physically verifies your essentials before you leave.</i>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Microcontroller-ESP32--WROOM--32-E7352C?style=flat-square&logo=espressif&logoColor=white" alt="ESP32">
-  <img src="https://img.shields.io/badge/Language-Arduino%20C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/Arduino_IDE-00979D?style=flat-square&logo=arduino&logoColor=white" alt="Arduino IDE">
   <img src="https://img.shields.io/badge/IoT%20Platform-Blynk%20Cloud-23C48E?style=flat-square&logo=blynk&logoColor=white" alt="Blynk">
   <img src="https://img.shields.io/badge/Simulation-Wokwi-7F52FF?style=flat-square" alt="Wokwi">
   <img src="https://img.shields.io/badge/Contest-IEEE%20SSCS%202026-00629B?style=flat-square&logo=ieee&logoColor=white" alt="IEEE SSCS">
@@ -28,16 +28,15 @@
   </a>
   &nbsp;
   <a href="Report/Ready2Go_Report.pdf" target="_blank">
-    <img src="https://img.shields.io/badge/📄_IEEE_Documentation-4B0082?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Project Report">
+    <img src="https://img.shields.io/badge/📄_Project_Report-3C3C3C?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Project Report">
   </a>
 </p>
 
----
-
 <p align="center">
-  <img src="Images/prototype.jpeg" width="340" alt="Ready2Go Hardware Prototype" style="border-radius: 8px;"><br>
-  <sub><b>Figure 1:</b> Ready2Go ESP32 Hardware Prototype — Designed for the IEEE SSCS Arduino Contest 2026</sub>
+<i>ESP32 • Embedded Systems • IoT • IEEE SSCS Arduino Contest 2026</i>
 </p>
+
+---
 
 ---
 
@@ -72,7 +71,13 @@ Unlike passive smartphones or software-only reminder apps, Ready2Go actively ver
 > 3. **Physical Verification:** Place essential items near integrated **Hall-effect magnetic sensors** to physically prove they are present.
 > 4. **Readiness Evaluation:** The system calculates a live readiness score, triggering audible buzzer alerts if critical items are missing before you step out.
 > 5. **Cloud Sync:** Live data syncs effortlessly with the **Blynk IoT Platform**, allowing remote status checks and dynamic checklist updates without reflashing firmware.
+<p align="center">
+  <img src="Images/prototype.jpeg" width="300" alt="Ready2Go Hardware Prototype">
+  <br>
+  <sub><b>Figure 1.</b> Ready2Go ESP32 Hardware Prototype.</sub>
+</p>
 
+---
 ---
 
 ## 🚀 Key Features
@@ -95,7 +100,7 @@ Unlike passive smartphones or software-only reminder apps, Ready2Go actively ver
 | :--- | :--- |
 | **Project Type** | Embedded Systems & Internet of Things (IoT) |
 | **Main Controller** | ESP32 DevKit V1 (Tensilica Xtensa Dual-Core 32-bit LX6) |
-| **Firmware Language** | Arduino C++ |
+| **Firmware Language** | Arduino IDE |
 | **IoT Platform** | Blynk Cloud IoT |
 | **Simulation Tool** | Wokwi Embedded Simulator |
 | **IDE** | Arduino IDE 2.x |
