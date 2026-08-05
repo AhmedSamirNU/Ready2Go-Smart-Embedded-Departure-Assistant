@@ -258,22 +258,3 @@ Ready2Go-Smart-Embedded-Departure-Assistant/
 ├── README.md                       # Repository Overview & Setup Guide
 └── LICENSE                         # MIT License
 
-<p align="center">
-
-<b>Ready2Go</b><br>
-
-Smart Embedded Departure Assistant
-
-<br><br>
-
-Electronics & Communications Engineering
-
-<br>
-
-Nile University
-
-<br>
-
-IEEE SSCS Arduino Contest 2026
-
-</p>
