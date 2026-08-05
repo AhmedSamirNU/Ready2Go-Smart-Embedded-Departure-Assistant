@@ -38,23 +38,23 @@
 
 ---
 
----
-
 ## 📌 Table of Contents
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Quick Facts](#-quick-facts)
-- [System Architecture](#-system-architecture)
-- [Hardware Design](#-hardware-design)
-- [Embedded User Interface](#-embedded-user-interface)
-- [IoT Dashboard](#-iot-dashboard)
-- [Wokwi Simulation](#-wokwi-simulation)
-- [Technologies Used](#-technologies-used)
-- [Repository Structure](#-repository-structure)
-- [Getting Started](#-getting-started)
-- [Future Improvements](#-future-improvements)
-- [Team & Acknowledgments](#-team--acknowledgments)
-- [License](#-license)
+<p align="center">
+
+<a href="#-overview">Overview</a> •
+<a href="#-key-features">Features</a> •
+<a href="#-quick-facts">Quick Facts</a> •
+<a href="#-system-architecture">Architecture</a> •
+<a href="#-hardware-design">Hardware</a>
+
+<br>
+
+<a href="#-embedded-user-interface">UI</a> •
+<a href="#-iot-dashboard">IoT</a> •
+<a href="#-wokwi-simulation">Simulation</a> •
+<a href="#-getting-started">Getting Started</a>
+
+</p>
 
 ---
 
@@ -72,17 +72,16 @@ Unlike passive smartphones or software-only reminder apps, Ready2Go actively ver
 > 4. **Readiness Evaluation:** The system calculates a live readiness score, triggering audible buzzer alerts if critical items are missing before you step out.
 > 5. **Cloud Sync:** Live data syncs effortlessly with the **Blynk IoT Platform**, allowing remote status checks and dynamic checklist updates without reflashing firmware.
 <p align="center">
-  <img src="Images/prototype.jpeg" width="300" alt="Ready2Go Hardware Prototype">
+  <img src="Images/prototype.jpeg" width="270" alt="Ready2Go Hardware Prototype">
   <br>
-  <sub><b>Figure 1.</b> Ready2Go ESP32 Hardware Prototype.</sub>
+  <sub><i>Ready2Go Prototype</i></sub>
 </p>
 
----
 ---
 
 ## 🚀 Key Features
 
-| Feature | Description |
+| Feature | Benefit |
 | :--- | :--- |
 | 🧠 **Dynamic Destination Checklists** | Tailors required checklist items based on selected destination |
 | 🧲 **Hardware Verification** | Hall-effect sensors ensure items are physically taken, not just checked off |
@@ -100,12 +99,27 @@ Unlike passive smartphones or software-only reminder apps, Ready2Go actively ver
 | :--- | :--- |
 | **Project Type** | Embedded Systems & Internet of Things (IoT) |
 | **Main Controller** | ESP32 DevKit V1 (Tensilica Xtensa Dual-Core 32-bit LX6) |
-| **Firmware Language** | Arduino IDE |
+| **Programming Language** | Arduino C++ |
 | **IoT Platform** | Blynk Cloud IoT |
 | **Simulation Tool** | Wokwi Embedded Simulator |
 | **IDE** | Arduino IDE 2.x |
 | **Competition** | IEEE SSCS Arduino Contest 2026 |
 
+---
+---
+
+## 📈 Project Statistics
+
+| Metric | Value |
+|:-------|:------|
+| Lines of Code | ~1,000+ |
+| Hardware Modules | 7 |
+| Supported Destinations | 6 + Custom |
+| Verified Critical Items | Keys • Wallet • Student ID |
+| IoT Connectivity | Blynk Cloud |
+| Platform | ESP32 |
+| Cloud Platform | Blynk IoT |
+| Hardware Verification | Hall Sensors |
 ---
 
 ## 🏗 System Architecture
@@ -113,36 +127,36 @@ Unlike passive smartphones or software-only reminder apps, Ready2Go actively ver
 The software architecture follows a modular, non-blocking event loop design ensuring smooth concurrency between sensor acquisition, LCD rendering, menu navigation, and Blynk cloud telemetry.
 
 <p align="center">
-  <img src="Images/system_architecture.png" width="75%" alt="Ready2Go System Architecture"><br>
-  <sub><b>Figure 2:</b> High-level software module interaction and data flow architecture.</sub>
+  <img src="Images/system_architecture.png" width="68%" alt="Ready2Go System Architecture"><br>
+  <sub><i>System Architecture</i></sub>
 </p>
 
 ---
 
-## 🔩 Hardware Design
+## 🔩 Hardware Overview
 
 ### High-Level Block Diagram
 
 The system interfaces digital motion sensors, analog joysticks, magnetic sensors, visual LCD displays, acoustic buzzers, and Wi-Fi telemetry around the ESP32 core.
 
 <p align="center">
-  <img src="Images/hardware_block_diagram.png" width="100%" alt="Hardware Block Diagram"><br>
-  <sub><b>Figure 3:</b> Complete hardware interconnectivity diagram.</sub>
+  <img src="Images/hardware_block_diagram.png" width="72%" alt="Hardware Block Diagram"><br>
+  <sub><i>Hardware Block Diagram</i></sub>
 </p>
 
 <br>
 
 ### Pin Mapping & Physical Assembly
 
-<table align="center" width="100%">
+<table align="center" width="82%">
   <tr>
     <td align="center" width="54%" valign="top">
       <img src="Images/pin_mapping.png" width="100%" alt="ESP32 Pin Mapping"><br>
-      <sub><b>Figure 4a:</b> GPIO Allocation Table (5:4)</sub>
+      <sub><i>ESP32 GPIO Mapping</i></sub>
     </td>
     <td align="center" width="46%" valign="top">
-      <img src="Images/hardware_connections.jpeg" width="84%" alt="Hardware Breadboard Connections"><br>
-      <sub><b>Figure 4b:</b> Breadboard Circuit Assembly (1:1)</sub>
+      <img src="Images/hardware_connections.jpeg" width="62%" alt="Hardware Breadboard Connections"><br>
+      <sub><i>Hardware Assembly</i></sub>
     </td>
   </tr>
 </table>
@@ -156,11 +170,11 @@ The embedded UI uses a 16x2 I2C Liquid Crystal Display paired with a 2-axis anal
 <table align="center" width="100%">
   <tr>
     <td align="center" width="50%">
-      <img src="Images/welcome_back.jpeg" width="92%" alt="Welcome Screen"><br>
+      <img src="Images/welcome_back.jpeg" width="86%" alt="Welcome Screen"><br>
       <b>1. Motion Detection & Welcome Screen</b>
     </td>
     <td align="center" width="50%">
-      <img src="Images/where_to.jpeg" width="92%" alt="Destination Selection Screen"><br>
+      <img src="Images/where_to.jpeg" width="86%" alt="Destination Selection Screen"><br>
       <b>2. Interactive Destination Menu</b>
     </td>
   </tr>
@@ -175,11 +189,11 @@ Powered by **Blynk IoT Cloud**, users can monitor departure status remotely and 
 <table align="center" width="100%">
   <tr>
     <td align="center" width="58%" valign="middle">
-      <img src="Images/connecting.jpeg" width="95%" alt="Cloud Connection Status Screen"><br>
+      <img src="Images/connecting.jpeg" width="82%" alt="Cloud Connection Status Screen"><br>
       <b>Wi-Fi & Blynk Telemetry Sync Status (5:4)</b>
     </td>
     <td align="center" width="42%" valign="middle">
-      <img src="Images/blynk_dashboard.jpeg" width="68%" alt="Blynk Mobile Dashboard App"><br>
+      <img src="Images/blynk_dashboard.jpeg" width="52%" alt="Blynk Mobile Dashboard App"><br>
       <b>Blynk Mobile Live Dashboard (9:16)</b>
     </td>
   </tr>
@@ -195,7 +209,7 @@ Powered by **Blynk IoT Cloud**, users can monitor departure status remotely and 
 The complete hardware layout and embedded firmware were thoroughly validated in **Wokwi** prior to physical assembly.
 
 <p align="center">
-  <img src="Images/wokwi.png" width="70%" alt="Wokwi Interactive Simulation"><br><br>
+  <img src="Images/wokwi.png" width="60%" alt="Wokwi Interactive Simulation"><br><br>
   <a href="https://wokwi.com/projects/470927609513027585" target="_blank">
     <img src="https://img.shields.io/badge/▶_Launch_Interactive_Wokwi_Simulation-7F52FF?style=for-the-badge&logo=wokwi&logoColor=white" alt="Launch Simulation">
   </a>
@@ -203,7 +217,7 @@ The complete hardware layout and embedded firmware were thoroughly validated in 
 
 ---
 
-## 🛠 Technologies Used
+## ⚙️ Technologies Used
 
 | Category | Component / Technology |
 | :--- | :--- |
@@ -243,3 +257,23 @@ Ready2Go-Smart-Embedded-Departure-Assistant/
 │
 ├── README.md                       # Repository Overview & Setup Guide
 └── LICENSE                         # MIT License
+
+<p align="center">
+
+<b>Ready2Go</b><br>
+
+Smart Embedded Departure Assistant
+
+<br><br>
+
+Electronics & Communications Engineering
+
+<br>
+
+Nile University
+
+<br>
+
+IEEE SSCS Arduino Contest 2026
+
+</p>
