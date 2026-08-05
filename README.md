@@ -155,7 +155,7 @@ The system interfaces digital motion sensors, analog joysticks, magnetic sensors
       <sub><i>ESP32 GPIO Mapping</i></sub>
     </td>
     <td align="center" width="46%" valign="top">
-      <img src="Images/hardware_connections.jpeg" width="62%" alt="Hardware Breadboard Connections"><br>
+      <img src="Images/hardware_connections.jpeg" width="100%" alt="Hardware Breadboard Connections"><br>
       <sub><i>Hardware Assembly</i></sub>
     </td>
   </tr>
